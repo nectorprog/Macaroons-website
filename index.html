@@ -31,7 +31,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30"
                      width="30px" height="30px">
                     <g id="surface50035029">
-                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(50.980395%,7.450981%,15.686275%);fill-opacity:1;"
+                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
                               d="M 7 4 C 6.742188 4 6.488281 4.097656 6.292969 4.292969 L 4.292969 6.292969 C 3.902344 6.683594 3.902344 7.316406 4.292969 7.707031 L 11.585938 15 L 4.292969 22.292969 C 3.902344 22.683594 3.902344 23.316406 4.292969 23.707031 L 6.292969 25.707031 C 6.683594 26.097656 7.316406 26.097656 7.707031 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.683594 26.097656 23.316406 26.097656 23.707031 25.707031 L 25.707031 23.707031 C 26.097656 23.316406 26.097656 22.683594 25.707031 22.292969 L 18.414062 15 L 25.707031 7.707031 C 26.097656 7.316406 26.097656 6.683594 25.707031 6.292969 L 23.707031 4.292969 C 23.316406 3.902344 22.683594 3.902344 22.292969 4.292969 L 15 11.585938 L 7.707031 4.292969 C 7.511719 4.097656 7.257812 4 7 4 Z M 7 4 "/>
                     </g>
                 </svg>
@@ -218,7 +218,7 @@
                 <div class="menu-item-img">
                     <img src="images/macaroon_4.png" alt="Макарун">
                 </div>
-                <div class="menu-item-title">Пирог с фисашками</div>
+                <div class="menu-item-title">Пирог с фисташками</div>
                 <div class="menu-item-block">
                     <div class="menu-item-block-text">
                         <div class="menu-item-block-text-info first-text">
@@ -253,8 +253,10 @@
             <input type="text" placeholder="Напишите, что хотите заказать..." class="order-input">
             <div class="order-data">Заполните данные для заказа</div>
             <input type="text" placeholder="Ваше имя" class="order-input">
-            <input type="number" placeholder="+375 (__) ___ - __ - __" class="order-input">
-            <button class="button">Оформить заказ</button>
+            <input type="tel" placeholder="+375 (__) ___ - __ - __" class="order-input">
+            <div class="order-actions">
+                <button class="button">Оформить заказ</button>
+            </div>
         </div>
         <img src="images/клубника_1.png" alt="Клубника" class="strawberry_1">
         <img src="images/клубника_2.png" alt="Клубника" class="strawberry_2">
@@ -309,9 +311,9 @@
     </div>
 </footer>
 <div class="popup-present">
-    <a href="#">
+    <div>
         <img src="images/present.png" alt="Подарок">
-    </a>
+    </div>
     <div class="popup-text">
         Оформите заказ
         и получите подарок!
@@ -332,8 +334,6 @@
         }
     })
 </script>
-
-
 
 
 </body>

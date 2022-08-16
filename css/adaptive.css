@@ -1,18 +1,83 @@
+@media  screen and (max-width: 1310px){
+    .popup-present {
+        width: 70px;
+        height: 70px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
 @media  screen and (max-width: 1310px) {
     .main-img::before {
-        content: none;
+        width: 150px;
+        height: 150px;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
     }
     .main-img::after {
-        content: none;
+        width: 150px;
+        height: 150px;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
     }
 }
 
-@media  screen and (max-width: 1169px) {
+@media screen and (max-width: 1169px) {
     .menu-items {
         grid-template-columns: repeat(2, 263px);
         justify-content: center;
         grid-column-gap: 29px;
         grid-row-gap: 136px;
+    }
+}
+
+@media screen and (max-width: 1105px) {
+    .main-img::before {
+        width: 120px;
+        height: 120px;
+        top: calc(50% - 60px);
+        left: calc(50% - 60px);
+    }
+    .main-img::after {
+        width: 120px;
+        height: 120px;
+        top: calc(50% - 60px);
+        left: calc(50% - 60px);
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .main {
+        padding-bottom: 420px;
+        position: relative;
+    }
+
+    .main-img {
+        position: absolute;
+        right: 55px;
+        bottom: 62px;
+    }
+    .main-img::before {
+        width: 120px;
+        height: 120px;
+        top: calc(50% - 60px);
+        left: calc(50% - 60px);
+    }
+
+    .main-img::before {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
+    }
+
+    .main-img::after {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
     }
 }
 
@@ -39,9 +104,20 @@
         justify-content: space-between;
     }
 
-    .strawberry_1, .strawberry_2 {
-        display: none;
+    .strawberry_1 {
+        width: 72px;
+        top: calc(50% - 43px);
+        left: calc(50% - 36px);
     }
+
+    .strawberry_2 {
+        top: 119px;
+        right: 85px;
+    }
+
+    /*.strawberry_1, .strawberry_2 {*/
+    /*    display: none;*/
+    /*}*/
 
     .header-menu {
         margin: 0 auto;
@@ -149,6 +225,17 @@
         margin-right: auto;
         margin-left: auto;
     }
+
+    .main-img {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .strawberry_1 {
+        left: calc(50% + 47px);
+    }
+
 }
 
 @media  screen and (max-width: 579px) {
@@ -156,8 +243,14 @@
         grid-template-columns: 263px;
     }
 
-    .strawberry_1, .strawberry_2 {
+    .strawberry_2 {
         display: none;
+    }
+
+    .strawberry_1 {
+        right: 34px;
+        left: unset;
+        top: 116px;
     }
 
     .information-benefits {
@@ -213,6 +306,24 @@
     }
 }
 
+@media  screen and (max-width: 525px) {
+    .main-img::before {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: calc(50% - 60px);
+        left: calc(50% - 60px);
+    }
+
+    .main-img::after {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: calc(50% - 60px);
+        left: calc(50% - 60px);
+    }
+}
+
 @media  screen and (max-width: 479px) {
     .header {
         padding-bottom: 0;
@@ -228,6 +339,22 @@
 
     .main-img {
         width: 250px;
+    }
+
+    .main-img::before {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: calc(50% - 40px);
+        left: calc(50% - 40px);
+    }
+
+    .main-img::after {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: calc(50% - 40px);
+        left: calc(50% - 40px);
     }
 
     .main-text h2 {
@@ -314,6 +441,15 @@
 
     .header-menu ul li {
         margin: 15px 0;
+        color: rgb(255, 57, 90);
+    }
+
+    .header-menu ul li a{
+        color: rgb(255, 57, 90);
+    }
+
+    .close path{
+        fill: rgb(255, 57, 90);
     }
 
     .header-menu.open {
@@ -331,12 +467,11 @@
 
     .order-text {
         text-align: left;
+        max-width: 294px;
     }
 
-    .order-text input {
-        margin-left: unset;
-        margin-right: unset;
-    }
+
+
 }
 
 
