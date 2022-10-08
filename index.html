@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>MACAROONS</title>
-    <link rel="stylesheet" href="css/private_reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="src/css/private_reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -238,7 +237,7 @@
 </section>
 
 <section class="order">
-    <div class="container">
+    <div class="container" id="order-cont">
         <div class="order-image">
             <img src="images/macaroons_order.png" alt="Макаруны">
         </div>
@@ -250,13 +249,27 @@
             <div class="order-choose">
                 Ваш выбор
             </div>
-            <input type="text" placeholder="Напишите, что хотите заказать..." class="order-input">
-            <div class="order-data">Заполните данные для заказа</div>
-            <input type="text" placeholder="Ваше имя" class="order-input">
-            <input type="tel" placeholder="+375 (__) ___ - __ - __" class="order-input">
-            <div class="order-actions">
-                <button class="button">Оформить заказ</button>
-            </div>
+            <form id="order-form">
+                <div>
+                    <input type="text" placeholder="Напишите, что хотите заказать..." class="order-input" id="order-type">
+                    <div class="error-input">Необходимо ввести 'Ваш Выбор'</div>
+                </div>
+                <div class="order-data">Заполните данные для заказа</div>
+                <div>
+                    <input type="text" placeholder="Ваше имя" class="order-input" id="order-name">
+                    <div class="error-input">Необходимо ввести 'Ваше имя'</div>
+                </div>
+                <div>
+                    <input type="tel" placeholder="+375 (__) ___ - __ - __" class="order-input" id="order-phone">
+                    <div class="error-input">Необходимо ввести 'Номер телефона'</div>
+                </div>
+                <div class="order-actions">
+                    <button type="button" class="button" id="order-send">Оформить заказ</button>
+                </div>
+            </form>
+        </div>
+        <div class="order-success">
+            <h2>Спасибо за Ваш заказ. Мы скоро свяжемся с Вами!</h2>
         </div>
         <img src="images/клубника_1.png" alt="Клубника" class="strawberry_1">
         <img src="images/клубника_2.png" alt="Клубника" class="strawberry_2">
@@ -323,18 +336,13 @@
     </div>
 </div>
 
-<script>
-    document.getElementById('burger').onclick = function () {
-        document.getElementById('header-menu').classList.add('open');
-    }
+<div class="loader">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
 
-    document.querySelectorAll('#header-menu *').forEach((item) => {
-        item.onclick = () => {
-            document.getElementById('header-menu').classList.remove('open');
-        }
-    })
-</script>
 
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="scripts/index.js"></script>
 
 </body>
 </html>
