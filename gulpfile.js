@@ -5,7 +5,7 @@ const gulp = require('gulp'),
     watch = require('gulp-watch');
 
 function defaultTask(cb) {
-    return gulp.src('./src/less/*.less')
+    return gulp.src('./src/less/styles.less')
         .pipe(less())
         .pipe(gulp.dest('./src/css'));
 }

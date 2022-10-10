@@ -1,3 +1,53 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 @font-face {
   font-family: Tavolga;
   src: url("../../fonts/tavolga_free.ttf") format("truetype"), url("../../fonts/tavolga_free.woff") format("woff"), url("../../fonts/tavolga_free.woff2") format("woff2");
@@ -57,7 +107,7 @@ body {
   box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
 }
 .header {
-  background-color: #eba8b1;
+  background-color: rgba(220, 40, 95, 0.85);
   padding-top: 36px;
   padding-bottom: 25px;
 }
@@ -98,7 +148,7 @@ body {
   font-weight: bold;
 }
 .main {
-  background-color: #eba8b1;
+  background-color: rgba(220, 40, 95, 0.85);
   padding-top: 126px;
   padding-bottom: 108px;
 }
@@ -166,7 +216,7 @@ body {
   }
 }
 .information {
-  background-color: #ffefef;
+  background-color: #fcfcfc;
   padding-top: 119px;
   padding-bottom: 120px;
 }
@@ -181,14 +231,14 @@ body {
 }
 .information .information-description .information-description-text h2 {
   font-size: 45px;
-  color: #331907;
+  color: #79390e;
   margin-bottom: 60px;
   line-height: 1.22;
 }
 .information .information-description .information-description-text .macaroon-info {
   font-size: 18px;
   font-family: "Gilroy", sans-serif;
-  color: #331907;
+  color: #79390e;
   line-height: 1.56;
   max-width: 402px;
 }
@@ -224,7 +274,7 @@ body {
   color: #821328;
 }
 .information .information-benefits .benefits-item:hover .benefits-item-number-wrapper {
-  background-color: #eba8b1;
+  background-color: rgba(220, 40, 95, 0.85);
 }
 .information .information-benefits .benefits-item .number-1 span {
   top: 10px;
@@ -245,17 +295,17 @@ body {
 .information .information-benefits .benefits-item .benefits-item-title {
   font-size: 20px;
   font-family: "Gilroy-Extrabold", sans-serif;
-  color: #331907;
+  color: #79390e;
   margin-bottom: 20px;
 }
 .information .information-benefits .benefits-item .benefits-item-description {
   font-size: 15px;
   font-family: "Gilroy-Medium", sans-serif;
-  color: #331907;
+  color: #79390e;
   line-height: 1.33;
 }
 .menu {
-  background-color: #eba8b1;
+  background-color: rgba(220, 40, 95, 0.85);
   padding: 120px 0;
 }
 .menu .container h2 {
@@ -315,7 +365,7 @@ body {
   line-height: 0;
 }
 .order {
-  background-color: #ffefef;
+  background-color: #fcfcfc;
   padding-top: 98px;
   padding-bottom: 120px;
 }
@@ -333,20 +383,20 @@ body {
 }
 .order .container .order-text h2 {
   font-size: 45px;
-  color: #331907;
+  color: #79390e;
   margin-bottom: 41px;
 }
 .order .container .order-text .order-text-description {
   font-size: 18px;
   font-family: "Gilroy", sans-serif;
-  color: #331907;
+  color: #79390e;
   line-height: 1.55;
   margin-bottom: 48px;
 }
 .order .container .order-text .order-choose {
   font-size: 18px;
   font-family: "Gilroy", sans-serif;
-  color: #120a06;
+  color: #090505;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -383,7 +433,7 @@ body {
   margin-bottom: 7px;
   font-size: 18px;
   font-family: "Gilroy", sans-serif;
-  color: #120a06;
+  color: #090505;
   font-weight: bold;
 }
 .order .container .order-text #order-form .order-actions .button {
@@ -429,7 +479,7 @@ body {
 }
 .footer {
   padding: 73px 0 62px 0;
-  background-color: #c0707c;
+  background-color: #d55a6c;
 }
 .footer .container {
   display: flex;
@@ -593,14 +643,6 @@ body {
   }
 }
 @media screen and (max-width: 1310px) {
-  .popup-present {
-    width: 70px;
-    height: 70px;
-    bottom: 20px;
-    right: 20px;
-  }
-}
-@media screen and (max-width: 1310px) {
   .main .container .main-img::before {
     width: 150px;
     height: 150px;
@@ -612,6 +654,12 @@ body {
     height: 150px;
     top: calc(50% - 75px);
     left: calc(50% - 75px);
+  }
+  .popup-present {
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    right: 20px;
   }
 }
 @media screen and (max-width: 1169px) {
