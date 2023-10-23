@@ -36,7 +36,7 @@
 
 1. Клонируйте репозиторий с GitHub:
 ```
-git clone [URL репозитория]
+git clone https://github.com/nectorprog/Macaroons-website/blob/main/README.md
 ```
 2. Откройте файл `index.html` в вашем браузере.
 
